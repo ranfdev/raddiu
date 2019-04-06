@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2018 ranfdev <{{email}}> -->
+<!-- Copyright 2019 ranfdev <ranfdev@gmail.com> -->
 <component type="desktop">
   <id>com.github.ranfdev.raddiu.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
@@ -9,7 +9,7 @@
   <summary></summary>
   <description></description>
   <releases>
-    <release version="0.0.1" date="2018-05-05"/>
+    <release version="1.0.0" date="2019-04-06"/>
   </releases>
   <provides>
     <binary>com.github.ranfdev.raddiu</binary>
@@ -52,4 +52,8 @@
     <screenshot type="default">
     </screenshot>
   </screenshots>
+  <custom>
+     <value key="x-appcenter-color-primary">#ffe16b</value>
+     <value key="x-appcenter-color-primary-text">#000</value>
+  </custom>
 </component>
