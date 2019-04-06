@@ -6,7 +6,11 @@ Build-Depends: debhelper (>= 10.5.1),
                gettext,
                libgtk-3-dev (>= 3.10),
                meson,
-               valac (>= 0.28.0)
+               valac (>= 0.28.0),
+               libgranite-dev (>= 5.2.0),
+               libsoup2.4-dev,
+               gdk-pixbuf-2.0
+               libjson-glib-dev
 Standards-Version: 4.1.1
 
 Package: com.github.ranfdev.raddiu
