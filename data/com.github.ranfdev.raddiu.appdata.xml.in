@@ -9,7 +9,7 @@
   <summary></summary>
   <description></description>
   <releases>
-    <release version="1.0.2" date="2019-04-06"/>
+    <release version="1.0.3" date="2019-04-06"/>
   </releases>
   <provides>
     <binary>com.github.ranfdev.raddiu</binary>
