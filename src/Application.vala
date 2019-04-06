@@ -150,6 +150,27 @@ namespace raddiu {
       var panes = new Gtk.Box(Orientation.HORIZONTAL, 0);
       window.add(panes);
 
+
+      // Notify user if mpv is not found
+      var dialog = new Granite.MessageDialog.with_image_from_icon_name(
+        "The program mpv is not installed", 
+        "Raddiu to function needs to use the program mpv. Install it with your package manager (eg: 'sudo apt install mpv')",
+        "dialog-error"
+        );
+      dialog.response.connect(() => {
+        quit();
+      });
+
+      var mpv_path = GLib.Environment.find_program_in_path("mpv");
+
+      print("MPV PATH: %s\n", mpv_path);
+      if (mpv_path == null) {
+        dialog.show();
+        dialog.run();
+      }
+
+      // mpv section end
+
       panes.pack_start (stack,true,true,0);
 
       playing_view = new Widgets.PlayingPanel();
