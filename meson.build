@@ -30,7 +30,6 @@ dependencies = [
     dependency('granite'),
     dependency('json-glib-1.0'),
     dependency('libsoup-2.4'),
-    dependency('gstreamer-1.0'),
     dependency('gdk-pixbuf-2.0'),
 ]
 
