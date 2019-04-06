@@ -1,0 +1,9 @@
+<schemalist>
+  <schema id="com.github.ranfdev.raddiu" path="/com/github/ranfdev/raddiu/" gettext-domain="com.github.ranfdev.raddiu">
+    <key name="country" type="s">
+      <summary>Country</summary>
+      <default>''</default>
+      <description>Show radios from this country</description>
+    </key>
+  </schema>
+</schemalist>

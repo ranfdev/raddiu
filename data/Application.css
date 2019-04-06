@@ -1,0 +1,17 @@
+.player {
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2), 0px 10px 15px 0px rgba(0,0,0,0.2);
+  background: linear-gradient(45deg, orange,yellow);
+  color: white;
+  border-radius: 5px;
+}
+.toggle {
+  border: 0px;
+  border-radius: 5px;
+  background: none;
+  padding: 10px;
+}
+flowboxchild:selected {
+  box-shadow: 0px 1px 2px 0px rgba(255,255,0,0.4), 0px 3px 5px 0px rgba(100,100,0,0.2);
+  background: linear-gradient(45deg, orange,yellow);
+  color: black;
+}

@@ -1,0 +1,5 @@
+<gresources>
+<gresource prefix="/com/github/ranfdev/raddiu">
+  <file alias="Application.css">Application.css</file>
+</gresource>
+</gresources>
