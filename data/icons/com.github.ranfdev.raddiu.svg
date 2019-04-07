@@ -30,13 +30,13 @@
      inkscape:window-height="705"
      id="namedview110"
      showgrid="false"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="42.672257"
-     inkscape:cy="68.644036"
+     inkscape:zoom="16"
+     inkscape:cx="28.041338"
+     inkscape:cy="25.287077"
      inkscape:window-x="0"
      inkscape:window-y="30"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4434"
+     inkscape:current-layer="g6491"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
@@ -56,6 +56,30 @@
   </sodipodi:namedview>
   <defs
      id="defs4436">
+    <linearGradient
+       id="linearGradient2131"
+       inkscape:collect="always">
+      <stop
+         id="stop2127"
+         offset="0"
+         style="stop-color:#cfa500;stop-opacity:1" />
+      <stop
+         id="stop2129"
+         offset="1"
+         style="stop-color:#ce9506;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1058">
+      <stop
+         style="stop-color:#ffe16b;stop-opacity:1"
+         offset="0"
+         id="stop1054" />
+      <stop
+         style="stop-color:#f9c440;stop-opacity:1"
+         offset="1"
+         id="stop1056" />
+    </linearGradient>
     <linearGradient
        id="linearGradient6557">
       <stop
@@ -1231,6 +1255,212 @@
          result="composite2"
          id="feComposite7454" />
     </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1058"
+       id="radialGradient1060"
+       cx="77.358528"
+       cy="36.913025"
+       fx="77.358528"
+       fy="36.913025"
+       r="63.081799"
+       gradientTransform="matrix(2.5514436e-8,1.2395434,-1.6621444,3.4213143e-8,122.63503,-56.747833)"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter1817">
+      <feFlood
+         flood-opacity="0.27451"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1807" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1809" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="2.77556e-17"
+         result="blur"
+         id="feGaussianBlur1811" />
+      <feOffset
+         dx="-1.38778e-16"
+         dy="1"
+         result="offset"
+         id="feOffset1813" />
+      <feComposite
+         in="offset"
+         in2="SourceGraphic"
+         operator="out"
+         result="composite2"
+         id="feComposite1815" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter2009">
+      <feFlood
+         flood-opacity="0.27451"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1999" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2001" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="2.77556e-17"
+         result="blur"
+         id="feGaussianBlur2003" />
+      <feOffset
+         dx="-1.38778e-16"
+         dy="1"
+         result="offset"
+         id="feOffset2005" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="fbSourceGraphic"
+         id="feComposite2007" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix2071" />
+      <feFlood
+         id="feFlood2073"
+         flood-opacity="0.160784"
+         flood-color="rgb(255,255,255)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite2075"
+         in="flood"
+         operator="out"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur2077"
+         in="composite1"
+         stdDeviation="2.77556e-17"
+         result="blur" />
+      <feOffset
+         id="feOffset2079"
+         dx="-1.38778e-16"
+         dy="-0.2"
+         result="offset" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite2081"
+         in="offset"
+         operator="atop"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix2107" />
+      <feFlood
+         id="feFlood2109"
+         flood-opacity="0.301961"
+         flood-color="rgb(255,255,255)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite2111"
+         in="flood"
+         operator="out"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur2113"
+         in="composite1"
+         stdDeviation="2.77556e-17"
+         result="blur" />
+      <feOffset
+         id="feOffset2115"
+         dx="-1.38778e-16"
+         dy="0.5"
+         result="offset" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite2117"
+         in="offset"
+         operator="atop"
+         result="composite2" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter2021">
+      <feFlood
+         flood-opacity="0.27451"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood2011" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2013" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="2.77556e-17"
+         result="blur"
+         id="feGaussianBlur2015" />
+      <feOffset
+         dx="-1.38778e-16"
+         dy="1"
+         result="offset"
+         id="feOffset2017" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite2019" />
+    </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2131"
+       id="radialGradient2125"
+       cx="24.990501"
+       cy="99.934395"
+       fx="24.990501"
+       fy="99.934395"
+       r="5.634583"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1,0,0,-1.666667,49.981003,266.49175)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2131"
+       id="radialGradient2161"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1,0,0,-1.666667,49.981003,266.49175)"
+       cx="24.990501"
+       cy="99.934395"
+       fx="24.990501"
+       fy="99.934395"
+       r="5.634583" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2131"
+       id="radialGradient2163"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1,0,0,-1.666667,49.981003,266.49175)"
+       cx="24.990501"
+       cy="99.934395"
+       fx="24.990501"
+       fy="99.934395"
+       r="5.634583" />
   </defs>
   <metadata
      id="metadata4439">
@@ -1316,7 +1546,7 @@
   </g>
   <rect
      id="rect5505-21-3-1"
-     style="color:#000000;opacity:1;fill:#f9c440;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.35555581;paint-order:stroke fill markers;filter:url(#filter6825)"
+     style="color:#000000;opacity:1;fill:url(#radialGradient1060);fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.35555581;paint-order:stroke fill markers;filter:url(#filter6825)"
      rx="5.6524911"
      ry="5.6524911"
      height="77.192627"
@@ -1358,8 +1588,8 @@
        style="fill:#000000;fill-opacity:0.52747258;stroke-width:0.93388438">RD</tspan></text>
   <g
      id="g6491"
-     transform="translate(-2.1213203,-3.4591652)"
-     style="filter:url(#filter7185)">
+     transform="translate(-2.1213203,-2.8341652)"
+     style="filter:url(#filter2021)">
     <circle
        style="opacity:1;fill:#332302;fill-opacity:1;stroke:none;stroke-width:0.97105747;stroke-opacity:1"
        id="circle7665"
@@ -1388,7 +1618,7 @@
        id="circle7691"
        style="opacity:1;fill:#332302;fill-opacity:1;stroke:none;stroke-width:0.97105747;stroke-opacity:1" />
     <circle
-       style="opacity:1;fill:#ac7d07;fill-opacity:1;stroke:none;stroke-width:0.84436369;stroke-opacity:1;filter:url(#filter5815)"
+       style="opacity:1;fill:url(#radialGradient2125);fill-opacity:1;stroke:none;stroke-width:0.84436369;stroke-opacity:1;filter:url(#filter2009)"
        id="circle7693"
        cx="24.990501"
        cy="104.62988"
@@ -1410,25 +1640,31 @@
      cy="71.155083"
      r="19.922953"
      transform="matrix(1.2995884,0,0,1.2995884,-27.537013,-16.97156)" />
+  <circle
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.20854986;stroke-opacity:0.95604398;filter:url(#filter1817)"
+     id="circle1793"
+     cx="91.916145"
+     cy="75.500763"
+     r="25.891638" />
   <g
-     style="filter:url(#filter7185)"
-     transform="translate(15.204072,-3.4591652)"
-     id="g7294">
+     style="filter:url(#filter2021)"
+     transform="translate(31.253676,-2.8341652)"
+     id="g2145">
     <circle
        r="5.4000263"
        cy="104.62988"
        cx="24.990501"
-       id="circle7282"
+       id="circle2133"
        style="opacity:1;fill:#332302;fill-opacity:1;stroke:none;stroke-width:0.97105747;stroke-opacity:1" />
     <circle
        style="opacity:1;fill:#ac7d07;fill-opacity:1;stroke:none;stroke-width:0.84436369;stroke-opacity:1"
-       id="circle7284"
+       id="circle2135"
        cx="24.990501"
        cy="104.62988"
        r="4.6954856" />
     <rect
        style="opacity:1;fill:#000000;fill-opacity:0.76373626;stroke:none;stroke-width:1.13049817;stroke-opacity:0.56043958"
-       id="rect7286"
+       id="rect2137"
        width="5.3111544"
        height="0.54195452"
        x="104.62988"
@@ -1437,7 +1673,7 @@
        transform="rotate(90)" />
     <circle
        style="opacity:1;fill:#332302;fill-opacity:1;stroke:none;stroke-width:0.97105747;stroke-opacity:1"
-       id="circle7288"
+       id="circle2139"
        cx="24.990501"
        cy="104.62988"
        r="5.4000263" />
@@ -1445,8 +1681,8 @@
        r="4.6954856"
        cy="104.62988"
        cx="24.990501"
-       id="circle7290"
-       style="opacity:1;fill:#ac7d07;fill-opacity:1;stroke:none;stroke-width:0.84436369;stroke-opacity:1;filter:url(#filter5815)" />
+       id="circle2141"
+       style="opacity:1;fill:url(#radialGradient2163);fill-opacity:1;stroke:none;stroke-width:0.84436369;stroke-opacity:1;filter:url(#filter2009)" />
     <rect
        transform="rotate(90)"
        ry="0.27097726"
@@ -1454,16 +1690,16 @@
        x="104.62988"
        height="0.54195452"
        width="5.3111544"
-       id="rect7292"
+       id="rect2143"
        style="opacity:1;fill:#000000;fill-opacity:0.76373626;stroke:none;stroke-width:1.13049817;stroke-opacity:0.56043958" />
   </g>
   <g
-     id="g7308"
-     transform="translate(32.529466,-3.4591652)"
-     style="filter:url(#filter7185)">
+     id="g2159"
+     transform="translate(14.566176,-2.8341652)"
+     style="filter:url(#filter2021)">
     <circle
        style="opacity:1;fill:#332302;fill-opacity:1;stroke:none;stroke-width:0.97105747;stroke-opacity:1"
-       id="circle7296"
+       id="circle2147"
        cx="24.990501"
        cy="104.62988"
        r="5.4000263" />
@@ -1471,7 +1707,7 @@
        r="4.6954856"
        cy="104.62988"
        cx="24.990501"
-       id="circle7298"
+       id="circle2149"
        style="opacity:1;fill:#ac7d07;fill-opacity:1;stroke:none;stroke-width:0.84436369;stroke-opacity:1" />
     <rect
        transform="rotate(90)"
@@ -1480,23 +1716,23 @@
        x="104.62988"
        height="0.54195452"
        width="5.3111544"
-       id="rect7300"
+       id="rect2151"
        style="opacity:1;fill:#000000;fill-opacity:0.76373626;stroke:none;stroke-width:1.13049817;stroke-opacity:0.56043958" />
     <circle
        r="5.4000263"
        cy="104.62988"
        cx="24.990501"
-       id="circle7302"
+       id="circle2153"
        style="opacity:1;fill:#332302;fill-opacity:1;stroke:none;stroke-width:0.97105747;stroke-opacity:1" />
     <circle
-       style="opacity:1;fill:#ac7d07;fill-opacity:1;stroke:none;stroke-width:0.84436369;stroke-opacity:1;filter:url(#filter5815)"
-       id="circle7304"
+       style="opacity:1;fill:url(#radialGradient2161);fill-opacity:1;stroke:none;stroke-width:0.84436369;stroke-opacity:1;filter:url(#filter2009)"
+       id="circle2155"
        cx="24.990501"
        cy="104.62988"
        r="4.6954856" />
     <rect
        style="opacity:1;fill:#000000;fill-opacity:0.76373626;stroke:none;stroke-width:1.13049817;stroke-opacity:0.56043958"
-       id="rect7306"
+       id="rect2157"
        width="5.3111544"
        height="0.54195452"
        x="104.62988"
@@ -1504,11 +1740,4 @@
        ry="0.27097726"
        transform="rotate(90)" />
   </g>
-  <circle
-     r="19.922953"
-     cy="71.155083"
-     cx="91.916145"
-     id="circle7360"
-     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.92994815;stroke-opacity:0.95604398;filter:url(#filter7456)"
-     transform="matrix(1.2995884,0,0,1.2995884,-27.537013,-16.97156)" />
 </svg>
