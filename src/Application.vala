@@ -117,8 +117,6 @@ namespace raddiu {
       }
 
 
-      // Init soup, needed to fetch content
-      soup.use_thread_context = true;
 
       // Init styles
       css_provider.load_from_resource ("/com/github/ranfdev/raddiu/Application.css");
