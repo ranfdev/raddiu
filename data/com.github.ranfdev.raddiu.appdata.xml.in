@@ -5,11 +5,21 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_group>ranfdev</project_group>
   <project_license>GPL-3.0+</project_license>
-  <name></name>
-  <summary></summary>
-  <description></description>
+  <name>Raddiu</name>
+  <summary>Program to listen to web radios</summary>
+  <description>
+    <p>
+    Listen to web radios from all around the world.
+    This program uses the radio-browser.info community made
+    database of radios, so you can probably find your favourite one 
+  </p>
+  </description>
   <releases>
-    <release version="1.0.4" date="2019-04-06"/>
+    <release version="1.0.4" date="2019-04-06">
+      <description>
+        initial release 
+      </description>
+    </release>
   </releases>
   <provides>
     <binary>com.github.ranfdev.raddiu</binary>
@@ -44,17 +54,15 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <developer_name>ranfdev</developer_name>
-  <url type="homepage"></url>
+  <url type="homepage">http://github.com/ranfdev/raddiu</url>
   <url type="bugtracker">http://github.com/ranfdev/raddiu/issues</url>
   <url type="help">http://github.com/ranfdev/raddiu/issues</url>
   <update_contact>ranfdev_AT_gmail.com</update_contact>
   <screenshots>
-    <screenshot type="default">
-    </screenshot>
     <screenshot>
       <image>https://raw.githubusercontent.com/ranfdev/raddiu/master/data/images/1.png</image>
     </screenshot>
-    <screenshot>
+    <screenshot type="default">
       <image>https://raw.githubusercontent.com/ranfdev/raddiu/master/data/images/2.png</image>
     </screenshot>
   </screenshots>
