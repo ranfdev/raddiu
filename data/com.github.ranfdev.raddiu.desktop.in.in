@@ -6,5 +6,5 @@ GenericName=Raddiu
 Exec=@EXEC_NAME@ %U
 Icon=com.github.ranfdev.raddiu
 Terminal=false
-Categories=Audio;GTK;Radio;
-Keywords=Radio
+Categories=AudioVideo;GTK;
+Keywords=Radio;
