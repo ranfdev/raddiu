@@ -3,7 +3,9 @@
       margin = 10;
       valign = Gtk.Align.START;
       child_activated.connect((item) => {
-        Raddiu.player.play((item.get_child() as Widgets.Radio).metadata);
+        var radio = (item.get_child() as Widgets.Radio).metadata;
+        Raddiu.player.play(radio);
+        Views.Recents.save_radio(radio);
       });
       add_radio_list(data);
     } 

@@ -8,6 +8,10 @@ public class raddiu.Views.Results: Gtk.ScrolledWindow {
   private Granite.Widgets.AlertView alert_view;
 
   public void load_next() {
+    if (query == "" || query == null) {
+      return;
+    }
+
     spinner.start();
     alert_view.hide();
 

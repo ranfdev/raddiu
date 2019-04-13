@@ -67,6 +67,8 @@ namespace raddiu {
     public static Player player;
     public static Soup.Session soup;
     public static GLib.Settings settings;
+    public static string cache;
+    public static string _app_id = "com.github.ranfdev.raddiu";
 
     private CssProvider css_provider = new CssProvider();
 
@@ -77,6 +79,7 @@ namespace raddiu {
     private Views.Countries countries;
     private Views.Top top;
     private Views.Results results;
+    private Views.Recents recents;
 
     private Stack stack;
 
@@ -85,7 +88,8 @@ namespace raddiu {
     static construct {
       player = new Player();
       soup = new Soup.Session(); 
-      settings = new GLib.Settings("com.github.ranfdev.raddiu");
+      settings = new GLib.Settings(_app_id);
+      cache = Path.build_path(Path.DIR_SEPARATOR_S, Environment.get_user_cache_dir(), _app_id);
     }
 
     public Raddiu () {
@@ -101,14 +105,27 @@ namespace raddiu {
       // Init player
       player = new Player();
 
-      // Init dbus
-      media_keys = Bus.get_proxy_sync(BusType.SESSION,"org.gnome.SettingsDaemon" , "/org/gnome/SettingsDaemon/MediaKeys", DBusProxyFlags.NONE, null);
+      // create cache folder if it doesn't exist
+      File cache_folder = File.new_for_path(cache);
 
-      media_keys.MediaPlayerKeyPressed.connect((caller,app,key) => {
-        if (key == "Play" || key == "Pause") {
-          Raddiu.player.toggle();
-        }
-      });
+      if (!cache_folder.query_exists()) {
+        cache_folder.make_directory_async.begin();
+      }
+
+      // Init dbus
+      try {
+
+        media_keys = Bus.get_proxy_sync(BusType.SESSION,"org.gnome.SettingsDaemon" , "/org/gnome/SettingsDaemon/MediaKeys", DBusProxyFlags.NONE, null);
+        media_keys.MediaPlayerKeyPressed.connect((caller,app,key) => {
+          if (key == "Play" || key == "Pause") {
+            Raddiu.player.toggle();
+          }
+        });
+
+      } catch (Error e) {
+        warning ("MEDIA KEY ERROR: %s", e.message);
+      }
+
 
       try {
         media_keys.GrabMediaPlayerKeys(application_id, (uint32)0);
@@ -142,6 +159,9 @@ namespace raddiu {
 
       results = new Views.Results();
       stack.add_titled(results, "results", "Results");
+
+      recents = new Views.Recents();
+      stack.add_titled(recents, "recents", "Recents");
 
       var stack_switcher = new Gtk.StackSwitcher();
 
@@ -203,6 +223,7 @@ namespace raddiu {
     }
 
     public static int main (string[] args) {
+      print("ok");
       var app = new Raddiu ();
       return app.run (args);
     }
