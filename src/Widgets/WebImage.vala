@@ -3,6 +3,7 @@ public class raddiu.Widgets.WebImage: Gtk.Image {
   public string fallback;
   public int pixel_width = 32;
   public int pixel_height = 32;
+  private Cancellable cancellable;
   public string url {get {return _url;}
     set {
       _url = value;
@@ -11,9 +12,18 @@ public class raddiu.Widgets.WebImage: Gtk.Image {
   public WebImage (string fallback_image = "unknown") {
     fallback = fallback_image; 
     gicon = new ThemedIcon(fallback);
+    destroy.connect(() => {
+      cancellable.cancel();
+    });
   }
   public async void load_from_url(string url) {
+
+    destroy.connect(() => {
+      cancellable.cancel();
+    });
+
     Soup.Request request;
+
     try {
       request = Raddiu.soup.request(url);
     } catch (Error e) {
@@ -21,7 +31,7 @@ public class raddiu.Widgets.WebImage: Gtk.Image {
       return;
     }
     try {
-      var stream = yield request.send_async(null);
+      var stream = yield request.send_async(cancellable);
       try {
         pixbuf = yield new Gdk.Pixbuf.from_stream_at_scale_async(
           stream,
