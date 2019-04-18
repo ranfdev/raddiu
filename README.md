@@ -1,6 +1,9 @@
 # Raddiu
 this is a radio program made for GNU/Linux (especially elementary os).
 
+# Cli usage
+com.github.ranfdev.raddiu search $radio_name --country $country_name --order $reverse --state $state --language $language
+
 # Development
 clone the repo and install the dependencies (You can find the list of dependencies in the meson.build file).
 You also need to install the elementary os sdk "elementary-sdk"

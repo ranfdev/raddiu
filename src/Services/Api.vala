@@ -34,6 +34,7 @@ namespace raddiu {
       public Json.Parser parser;
       public signal void item_loaded(RadioData item);
       public signal void started();
+      public signal void ended();
       private string url = "http://www.radio-browser.info/webservice/json/stations";
       public Datalist<string> parameters = Datalist<string>();
       public RadioListFetcher() {
@@ -42,6 +43,7 @@ namespace raddiu {
         parser.array_element.connect((parser,array,index) => {
           item_loaded(Json.gobject_deserialize(typeof (RadioData), array.get_element(index)) as RadioData);
         });
+        parser.array_end.connect(() => {ended();});
       }
       public async void load(string input_url) {
         var msg = Soup.Form.request_new_from_datalist(
