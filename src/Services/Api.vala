@@ -33,10 +33,10 @@ namespace raddiu {
     public class RadioListFetcher {
       public Json.Parser parser;
       private Cancellable cancellable;
+      public signal void item_loaded(RadioData item);
       private string url = "http://www.radio-browser.info/webservice/json/stations";
       public Datalist<string> parameters = Datalist<string>();
 
-      public signal void item_loaded(RadioData item);
       public signal void started();
       public signal void finished();
 
