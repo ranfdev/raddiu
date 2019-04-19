@@ -33,6 +33,19 @@ public class raddiu.Views.Results: Gtk.ScrolledWindow {
     content = new Gtk.Box(Gtk.Orientation.VERTICAL,5);
     add(content);
 
+    var search_entry = new Gtk.SearchEntry();
+    search_entry.margin = 10;
+    content.add(search_entry);
+    search_entry.search_changed.connect(() => {
+      if (search_entry.text.length > 0) {
+        query = search_entry.text;
+        load_next();
+      }
+    });
+
+    var country_label = new Gtk.Label("Country:");
+    var country_combo_box = new Gtk.ComboBoxText();
+
     alert_view = new Granite.Widgets.AlertView("No results","Try to change your search query", "system-search-symbolic");
     content.add(alert_view);
 

@@ -232,15 +232,7 @@ namespace raddiu {
       header.show_close_button = true;
       header.set_custom_title(stack_switcher);
 
-      var search_entry = new Gtk.SearchEntry();
-      header.pack_end(search_entry);
-      search_entry.search_changed.connect(() => {
-        if (search_entry.text.length > 0) {
-          stack.visible_child_name = "results"; 
-          results.query = search_entry.text;
-          results.load_next();
-        }
-      });
+      
 
       window.set_titlebar(header);
       window.show_all ();
