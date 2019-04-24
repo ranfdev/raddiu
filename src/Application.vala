@@ -84,7 +84,7 @@ namespace raddiu {
 
     private Views.Countries countries;
     private Views.Top top;
-    private Views.Results results;
+    private Views.Search search;
     private Views.Recents recents;
 
     private Stack stack;
@@ -187,8 +187,8 @@ namespace raddiu {
       top = new Views.Top();
       stack.add_titled(top, "top", "Top");
 
-      results = new Views.Results();
-      stack.add_titled(results, "results", "Results");
+      search = new Views.Search();
+      stack.add_titled(search, "search", "Search");
 
       recents = new Views.Recents();
       stack.add_titled(recents, "recents", "Recents");

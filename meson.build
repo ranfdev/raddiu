@@ -116,7 +116,7 @@ code_files = files(
     'src/Widgets/PlayingPanel.vala',
     'src/Views/Top.vala',
     'src/Views/Countries.vala',
-    'src/Views/Results.vala',
+    'src/Views/Search.vala',
     'src/Views/Recents.vala'
 )
 

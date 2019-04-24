@@ -7,7 +7,6 @@ namespace raddiu {
   }
   public class Country: Object {
     public string name {get;set;}
-    public string stationcount {get;set;}
   }
   namespace Network {
     public class CountriesFetcher {
@@ -25,6 +24,26 @@ namespace raddiu {
 
       public async void load() {
         var msg = new Soup.Message("GET", url);
+        var stream = yield Raddiu.soup.send_async(msg);
+        yield parser.load_from_stream_async(stream);
+      }
+    }
+
+    public class FilterListFetcher {
+      public Json.Parser parser;
+      public signal void item_loaded(Country item);
+      public signal void started();
+      private string url = "http://www.radio-browser.info/webservice/json/";
+      public FilterListFetcher() {
+        parser = new Json.Parser();
+        parser.array_start.connect(() => {started();});
+        parser.array_element.connect((parser,array,index) => {
+          item_loaded(Json.gobject_deserialize(typeof (Country), array.get_element(index)) as Country);
+        });
+      }
+
+      public async void load(string filter_name) {
+        var msg = new Soup.Message("GET", url + filter_name);
         var stream = yield Raddiu.soup.send_async(msg);
         yield parser.load_from_stream_async(stream);
       }
