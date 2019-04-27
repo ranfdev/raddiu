@@ -38,7 +38,7 @@ public class raddiu.Views.Discover: Gtk.ScrolledWindow {
     content.add(top_radio_list);
 
     var top_fetcher = new Network.RadioListFetcher();
-    top_fetcher.parameters.set_data("order", "clickcount");
+    top_fetcher.parameters.set_data("order", "votes");
     top_fetcher.parameters.set_data("reverse", "true");
     top_fetcher.parameters.set_data("limit", "6");
 
