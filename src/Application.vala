@@ -83,7 +83,6 @@ namespace raddiu {
     private Widgets.PlayingPanel playing_view;
 
     private Views.Discover discover;
-    private Views.Top top;
     public static Views.Search search;
     private Views.Recents recents;
 
@@ -184,9 +183,6 @@ namespace raddiu {
       discover = new Views.Discover();
       stack.add_titled(discover, "discover","Discover");
 
-      top = new Views.Top();
-      stack.add_titled(top, "top", "Top");
-
       search = new Views.Search();
       stack.add_titled(search, "search", "Search");
 
@@ -240,7 +236,7 @@ namespace raddiu {
       window.destroy.connect(() => {
         Raddiu.player.pause();
       });
-      stack.visible_child = top;
+      stack.visible_child = discover;
       stack_switcher.stack = stack;
     }
 

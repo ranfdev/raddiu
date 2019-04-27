@@ -114,7 +114,6 @@ code_files = files(
     'src/Widgets/Radio.vala',
     'src/Widgets/RadioList.vala',
     'src/Widgets/PlayingPanel.vala',
-    'src/Views/Top.vala',
     'src/Views/Discover.vala',
     'src/Views/Search.vala',
     'src/Views/Recents.vala'
