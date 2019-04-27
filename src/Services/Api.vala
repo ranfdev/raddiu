@@ -4,6 +4,8 @@ namespace raddiu {
     public string name {get;set;}
     public string url {get; set;}
     public string favicon {get; set;}
+    public string votes {get; set;}
+    public string clickcount {get; set;}
   }
   public class Country: Object {
     public string name {get;set;}

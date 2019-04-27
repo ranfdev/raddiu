@@ -84,10 +84,10 @@ namespace raddiu {
 
     private Views.Discover discover;
     private Views.Top top;
-    private Views.Search search;
+    public static Views.Search search;
     private Views.Recents recents;
 
-    private Stack stack;
+    public static Stack stack;
 
     public ApplicationWindow window;
 

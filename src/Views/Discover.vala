@@ -54,9 +54,13 @@ public class raddiu.Views.Discover: Gtk.ScrolledWindow {
     var genres_container = new Gtk.FlowBox();
     genres_container.row_spacing = 10;
     genres_container.column_spacing = 10;
+      genres_container.child_activated.connect((child) => {
+        Raddiu.search.tags_entry.text = ((Gtk.Label)child.get_child()).label;
+        Raddiu.stack.set_visible_child_name("search");
+      });
     foreach (var genre in genres) {
       var flowbox_child = new Gtk.FlowBoxChild();
-      flowbox_child.get_style_context().add_class(Granite.STYLE_CLASS_CARD);
+      flowbox_child.get_style_context().add_class("raddiu-card");
 
       var label = new Gtk.Label(genre);
       label.margin = 15;

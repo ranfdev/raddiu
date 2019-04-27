@@ -75,6 +75,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
   public Search() {
 
     content = new Gtk.Box(Gtk.Orientation.VERTICAL,5);
+    content.margin = 10;
     add(content);
 
 
