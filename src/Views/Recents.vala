@@ -59,16 +59,8 @@ public class raddiu.Views.Recents: Gtk.ScrolledWindow {
     load();
 
     content = new Gtk.Box(Gtk.Orientation.VERTICAL, 20); 
+    content.margin = 10;
     add(content);
-
-    var horizontal_header = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 20);
-    content.add(horizontal_header);
-
-    var label = new Gtk.Label("Recents");
-    label.get_style_context().add_class(Granite.STYLE_CLASS_H2_LABEL);
-    label.halign = Gtk.Align.START;
-    label.margin = 15;
-    horizontal_header.add(label);
 
     radio_list = new Widgets.RadioList();
     content.add(radio_list);

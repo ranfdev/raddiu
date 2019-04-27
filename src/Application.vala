@@ -82,12 +82,12 @@ namespace raddiu {
 
     private Widgets.PlayingPanel playing_view;
 
-    private Views.Countries countries;
+    private Views.Discover discover;
     private Views.Top top;
-    private Views.Search search;
+    public static Views.Search search;
     private Views.Recents recents;
 
-    private Stack stack;
+    public static Stack stack;
 
     public ApplicationWindow window;
 
@@ -181,8 +181,8 @@ namespace raddiu {
       stack = new Gtk.Stack();
       stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
 
-      countries = new Views.Countries();
-      stack.add_titled(countries, "countries","Countries");
+      discover = new Views.Discover();
+      stack.add_titled(discover, "discover","Discover");
 
       top = new Views.Top();
       stack.add_titled(top, "top", "Top");

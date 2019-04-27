@@ -7,7 +7,7 @@ public class raddiu.Widgets.PlayingPanel : Gtk.Box {
     image = new Widgets.WebImage ("folder-music-symbolic");
     image.pixel_size = 32;
     image.margin = 20;
-    image.get_style_context().add_class("player");
+    image.get_style_context().add_class("raddiu-card");
     image.halign = Gtk.Align.CENTER;
     image.valign = Gtk.Align.CENTER;
     image.hexpand = false;

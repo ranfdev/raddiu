@@ -1,7 +1,8 @@
   public class raddiu.Widgets.RadioList: Gtk.FlowBox {
     public RadioList (RadioData[] data = {}) {
-      margin = 10;
       valign = Gtk.Align.START;
+      row_spacing = 10;
+      column_spacing = 10;
       child_activated.connect((item) => {
         var radio = (item.get_child() as Widgets.Radio).metadata;
         Raddiu.player.play(radio);
