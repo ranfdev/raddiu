@@ -1,5 +1,7 @@
 # Raddiu
 ![Raddiu logo](data/icons/com.github.ranfdev.raddiu.svg)
+![Raddiu screenshot](data/images/1.png)
+![Raddiu screenshot](data/images/2.png)
 
 this is a radio program made for GNU/Linux (especially elementary os).
 
