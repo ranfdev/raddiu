@@ -11,17 +11,8 @@ com.github.ranfdev.raddiu search $radio_name --country $country_name --order $re
 ```
 # TODO:
 
-- remove country page
-- create a new discover page:
-
-    The discover page should be a more user friendly search page, with coloured buttons and nice
-    images.
-
-    the page should contain some buttons with genres.
-    when the user clicks on a genre, the ui switches to the search page and starts
-    searching for the correct genre.
-
 - add more options to the cli.
+- ability to upvote a radio.
 
 # Development
 clone the repo and install the dependencies (You can find the list of dependencies in the meson.build file).
