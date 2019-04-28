@@ -16,7 +16,7 @@
   </p>
   </description>
   <releases>
-    <release version="1.1.0" date="2019-04-28">
+    <release version="1.1.1" date="2019-04-28">
       <description>
         redesign, added advanced search filters, added a discover page,
         added recents page, added cli search.
