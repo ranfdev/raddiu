@@ -11,10 +11,18 @@
     <p>
     Listen to web radios from all around the world.
     This program uses the radio-browser.info community made
-    database of radios, so you can probably find your favourite one 
+    database of radios, to provide you with the biggest list
+    of radios available online.
   </p>
   </description>
   <releases>
+    <release version="1.1.0" date="2019-04-28">
+      <description>
+        redesign, added advanced search filters, added a discover page,
+        added recents page, added cli search.
+      </description>
+    </release>
+ 
     <release version="1.0.8" date="2019-04-06">
       <description>
         initial release 
