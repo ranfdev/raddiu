@@ -112,8 +112,6 @@ namespace raddiu {
 
     static construct {
       player = new Player();
-      soup = new Soup.Session(); 
-      soup.timeout = 10;
       settings = new GLib.Settings(_app_id);
       cache = Path.build_path(Path.DIR_SEPARATOR_S, Environment.get_user_cache_dir(), _app_id);
     }
@@ -240,6 +238,9 @@ namespace raddiu {
     }
 
     public static int main (string[] args) {
+      soup = new Soup.Session(); 
+      soup.timeout = 10;
+      soup.user_agent = _app_id + "/1.0";
 
       // If args > 1 it means the user is trying to run the program
       // as a cli program
