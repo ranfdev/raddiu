@@ -9,11 +9,21 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
   private Gtk.Spinner spinner;
   private Granite.Widgets.AlertView alert_view;
 
+  public Gtk.SearchEntry search_entry;
   public Gtk.ComboBoxText reverse_combo_box;
   public Gtk.ComboBoxText language_combo_box;
   public Gtk.ComboBoxText country_combo_box;
   public Gtk.ComboBoxText order_combo_box;
   public Gtk.SearchEntry tags_entry;
+
+  public void reset_filters() {
+      search_entry.text = "";
+      order_combo_box.active_id = "votes";
+      reverse_combo_box.active_id = "descending";
+      language_combo_box.active_id = "";
+      country_combo_box.active_id = "";
+      tags_entry.text = "";
+  }
 
   public void load() {
     spinner.start();
@@ -22,6 +32,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     // Stop fetching the old query
     if (fetcher != null) {
       fetcher.cancel();
+      print("CANCELLED REQUESTS");
     }
 
     fetcher = new Network.RadioListFetcher();
@@ -81,7 +92,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
 
     // search bar
 
-    var search_entry = new Gtk.SearchEntry();
+    search_entry = new Gtk.SearchEntry();
     search_entry.margin = 10;
     search_entry.placeholder_text = "Search by radio name...";
     content.add(search_entry);
@@ -114,7 +125,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     option_row_country.add(country_label);
 
     country_combo_box = new Gtk.ComboBoxText.with_entry();
-    country_combo_box.append_text(Raddiu.settings.get_string("country"));
+    country_combo_box.append("","");
     option_row_country.pack_end(country_combo_box);
 
     country_combo_box.changed.connect(reload);
@@ -129,8 +140,8 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     option_row_order.add(order_label);
 
     string possible_orders[] = {
-      "clickcount",
       "votes",
+      "clickcount",
       "name",
       "country",
       "state",
@@ -149,11 +160,12 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     };
 
     order_combo_box = new Gtk.ComboBoxText.with_entry();
+    order_combo_box.append("","");
 
     foreach (var order in possible_orders) {
-      order_combo_box.append_text(order);
+      order_combo_box.append(order,order);
     }
-    order_combo_box.active = 0;
+    order_combo_box.active = 1;
     option_row_order.pack_end(order_combo_box);
 
     order_combo_box.changed.connect(reload);
@@ -168,7 +180,8 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     option_row_language.add(language_label);
 
     language_combo_box = new Gtk.ComboBoxText.with_entry();
-    language_combo_box.append_text(Raddiu.settings.get_string("country"));
+    language_combo_box.append("","");
+
     option_row_language.pack_end(language_combo_box);
 
     language_combo_box.changed.connect(reload);
@@ -197,8 +210,8 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     option_row_reverse.add(reverse_label);
 
     reverse_combo_box = new Gtk.ComboBoxText();
-    reverse_combo_box.append_text("descending");
-    reverse_combo_box.append_text("ascending");
+    reverse_combo_box.append("descending","descending");
+    reverse_combo_box.append("ascending","ascending");
     reverse_combo_box.active = 0;
     option_row_reverse.pack_end(reverse_combo_box);
 
@@ -210,15 +223,17 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     var language_fetcher = new Network.FilterListFetcher();
 
     countries_fetcher.item_loaded.connect((obj) => {
-      country_combo_box.append_text(obj.name);
+      country_combo_box.append(obj.name,obj.name);
     });
 
     language_fetcher.item_loaded.connect((obj) => {
-      language_combo_box.append_text(obj.name);
+      language_combo_box.append(obj.name,obj.name);
     });
 
     countries_fetcher.load("countries");
     language_fetcher.load("languages");
+
+
 
 
     // Alert view
@@ -242,6 +257,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
       }
     });
 
-    load();
+    // Reset filters
+    reset_filters();
   } 
 }

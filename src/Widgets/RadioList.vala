@@ -4,7 +4,8 @@
       row_spacing = 10;
       column_spacing = 10;
       child_activated.connect((item) => {
-        var radio = (item.get_child() as Widgets.Radio).metadata;
+        print("STILL ALIVE");
+        var radio = (item as Widgets.Radio).metadata;
         Raddiu.player.play(radio);
         Views.Recents.save_radio(radio);
       });

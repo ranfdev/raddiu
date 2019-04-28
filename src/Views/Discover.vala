@@ -31,8 +31,19 @@ public class raddiu.Views.Discover: Gtk.ScrolledWindow {
     content.margin = 10;
     add(content);
 
+    var top_row = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
+    content.add(top_row);
+
     var top_title = new Granite.HeaderLabel("Top");
-    content.add(top_title);
+    top_row.add(top_title);
+
+    var top_expand_button = new Gtk.Button.with_label("Expand");
+    top_expand_button.halign = Gtk.Align.END;
+    top_expand_button.clicked.connect(() => {
+      Raddiu.search.reset_filters();
+      Raddiu.stack.set_visible_child_name("search");
+    });
+    top_row.pack_end(top_expand_button);
 
     var top_radio_list = new Widgets.RadioList();
     content.add(top_radio_list);
@@ -55,6 +66,7 @@ public class raddiu.Views.Discover: Gtk.ScrolledWindow {
     genres_container.row_spacing = 10;
     genres_container.column_spacing = 10;
       genres_container.child_activated.connect((child) => {
+        Raddiu.search.reset_filters();
         Raddiu.search.tags_entry.text = ((Gtk.Label)child.get_child()).label;
         Raddiu.stack.set_visible_child_name("search");
       });

@@ -74,6 +74,7 @@ namespace raddiu {
         cancellable.cancel();
       }
       public async void load(string input_url) {
+        cancellable = new Cancellable();
         var msg = Soup.Form.request_new_from_datalist(
           "POST",
           url + input_url,

@@ -17,10 +17,7 @@ public class raddiu.Widgets.WebImage: Gtk.Image {
     });
   }
   public async void load_from_url(string url) {
-
-    destroy.connect(() => {
-      cancellable.cancel();
-    });
+    cancellable = new Cancellable();
 
     Soup.Request request;
 
@@ -46,6 +43,7 @@ public class raddiu.Widgets.WebImage: Gtk.Image {
       }
     } catch (Error e) {
       print("%s\n",e.message);
+      gicon = new ThemedIcon(fallback);
     }
   }
   public WebImage.from_url(string url,string fallback_image = "unknown") {

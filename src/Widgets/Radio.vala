@@ -1,8 +1,9 @@
-public class raddiu.Widgets.Radio : Gtk.Box {
+public class raddiu.Widgets.Radio : Gtk.FlowBoxChild {
+  private Gtk.Box content;
   public RadioData metadata;
   public Radio (RadioData data) {
-    orientation = Gtk.Orientation.HORIZONTAL;
-    spacing = 5;
+    content = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
+    add(content);
     metadata = data;
 
     get_style_context().add_class("raddiu-card");
@@ -13,11 +14,11 @@ public class raddiu.Widgets.Radio : Gtk.Box {
     icon.pixel_width = 48;
     icon.pixel_height = 48;
     icon.pixel_size = 48;
-    add(icon);
+    content.add(icon);
 
     var text = new Gtk.Box(Gtk.Orientation.VERTICAL, 0);
     text.margin = 10;
-    add(text);
+    content.add(text);
 
     var label = new Granite.HeaderLabel(data.name);
     label.max_width_chars = 25;
