@@ -46,8 +46,12 @@ namespace raddiu {
 
       public async void load(string filter_name) {
         var msg = new Soup.Message("GET", url + filter_name);
-        var stream = yield Raddiu.soup.send_async(msg);
-        yield parser.load_from_stream_async(stream);
+        try {
+          var stream = yield Raddiu.soup.send_async(msg);
+          yield parser.load_from_stream_async(stream);
+        } catch (Error e) {
+          print("%s\n", e.message);
+        }
       }
     }
 
@@ -80,8 +84,13 @@ namespace raddiu {
           url + input_url,
           parameters
           );
-        var stream = yield Raddiu.soup.send_async(msg, cancellable);
-        yield parser.load_from_stream_async(stream);
+        try {
+          var stream = yield Raddiu.soup.send_async(msg, cancellable);
+          yield parser.load_from_stream_async(stream);
+        } catch (Error e) {
+          finished();
+          print("%s\n", e.message);
+        }
       }
     }
   }

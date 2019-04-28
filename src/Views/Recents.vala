@@ -49,7 +49,11 @@ public class raddiu.Views.Recents: Gtk.ScrolledWindow {
 
     var generator = new Json.Generator();
     generator.set_root(builder.get_root());
-    generator.to_file(recents_file);
+    try {
+      generator.to_file(recents_file);
+    } catch (Error e) {
+      print("%s\n", e.message);
+    }
 
   }
 

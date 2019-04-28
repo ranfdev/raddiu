@@ -230,8 +230,8 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
       language_combo_box.append(obj.name,obj.name);
     });
 
-    countries_fetcher.load("countries");
-    language_fetcher.load("languages");
+    countries_fetcher.load.begin("countries");
+    language_fetcher.load.begin("languages");
 
 
 
