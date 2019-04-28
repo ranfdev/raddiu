@@ -24,14 +24,10 @@ public class raddiu.Widgets.PlayingPanel : Gtk.Box {
     toggler.gicon = new ThemedIcon ("media-playback-start-symbolic");
     toggler.pixel_size = 32;
 
-    var event_box = new Gtk.EventBox();
-    event_box.add(toggler);
-    pack_start(event_box);
-
-    event_box.button_press_event.connect((item) => {
-      Raddiu.player.toggle();
-      return false;
-    });
+    var toggler_button = new Gtk.ToggleButton();
+    toggler_button.image = toggler;
+    toggler_button.toggled.connect(Raddiu.player.toggle);
+    pack_end(toggler_button);
 
     Raddiu.player.notify["playing"].connect((s,t) => {
       if (Raddiu.player.playing)
