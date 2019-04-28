@@ -124,8 +124,6 @@ namespace raddiu {
         flags: ApplicationFlags.FLAGS_NONE
         );
     }
-    private void handle_keypress(dynamic Object bus, string application, string key) {
-    }
     protected override void activate () {
 
       // Init player
