@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Raddiu
+Comment=Listen to web radios
+GenericName=Raddiu
+Exec=com.github.ranfdev.raddiu %U
+Icon=com.github.ranfdev.raddiu
+Terminal=false
+Categories=AudioVideo;GTK;
+Keywords=Radio;

@@ -26,7 +26,7 @@ public class raddiu.Widgets.Radio : Gtk.FlowBoxChild {
     label.wrap_mode = Pango.WrapMode.WORD_CHAR;
     text.add(label);
 
-    var votes = new Gtk.Label("Votes: " + data.votes);
+    var votes = new Gtk.Label(_("Votes: ") + data.votes);
     votes.halign = Gtk.Align.START;
     text.add(votes);
   }    

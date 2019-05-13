@@ -94,7 +94,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
 
     search_entry = new Gtk.SearchEntry();
     search_entry.margin = 10;
-    search_entry.placeholder_text = "Search by radio name...";
+    search_entry.placeholder_text = _("Search by radio name...");
     content.add(search_entry);
 
     search_entry.search_changed.connect(() => {
@@ -121,7 +121,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     var option_row_country = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
     option_container.add(option_row_country);
 
-    var country_label = new Gtk.Label("Country:");
+    var country_label = new Gtk.Label(_("Country:"));
     option_row_country.add(country_label);
 
     country_combo_box = new Gtk.ComboBoxText.with_entry();
@@ -136,7 +136,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     var option_row_order = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
     option_container.add(option_row_order);
 
-    var order_label = new Gtk.Label("Order by:");
+    var order_label = new Gtk.Label(_("Order by:"));
     option_row_order.add(order_label);
 
     string possible_orders[] = {
@@ -176,7 +176,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     var option_row_language = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
     option_container.add(option_row_language);
 
-    var language_label = new Gtk.Label("Language:");
+    var language_label = new Gtk.Label(_("Language:"));
     option_row_language.add(language_label);
 
     language_combo_box = new Gtk.ComboBoxText.with_entry();
@@ -192,11 +192,11 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     var option_row_tags = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
     option_container.add(option_row_tags);
 
-    var tags_label = new Gtk.Label("Tags:");
+    var tags_label = new Gtk.Label(_("Tags:"));
     option_row_tags.add(tags_label);
 
     tags_entry = new Gtk.SearchEntry();
-    tags_entry.placeholder_text = "blues, jazz, rock, punk...";
+    tags_entry.placeholder_text = _("blues, jazz, rock, punk...");
     tags_entry.search_changed.connect(reload);
     option_row_tags.pack_end(tags_entry);
 
@@ -206,7 +206,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     var option_row_reverse = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
     option_container.add(option_row_reverse);
 
-    var reverse_label = new Gtk.Label("Reverse:");
+    var reverse_label = new Gtk.Label(_("Reverse:"));
     option_row_reverse.add(reverse_label);
 
     reverse_combo_box = new Gtk.ComboBoxText();
@@ -238,7 +238,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
 
     // Alert view
 
-    alert_view = new Granite.Widgets.AlertView("No results","Try to change your search query", "system-search-symbolic");
+    alert_view = new Granite.Widgets.AlertView(_("No results"), _("Try to change your search query"), "system-search-symbolic");
     alert_view.hide();
     content.add(alert_view);
 

@@ -1,0 +1,66 @@
+# French translations for extra package.
+# Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# NathanBnm, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-13 11:46+0200\n"
+"PO-Revision-Date: 2019-05-13 11:30+0200\n"
+"Last-Translator: NathanBnm\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: data/com.github.ranfdev.raddiu.desktop.in:4
+#: data/com.github.ranfdev.raddiu.desktop.in:6
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:8
+msgid "Raddiu"
+msgstr "Raddiu"
+
+#: data/com.github.ranfdev.raddiu.desktop.in:5
+msgid "Listen to web radios"
+msgstr "Écoutez des webradios"
+
+#: data/com.github.ranfdev.raddiu.desktop.in:8
+msgid "com.github.ranfdev.raddiu"
+msgstr "com.github.ranfdev.raddiu"
+
+#: data/com.github.ranfdev.raddiu.desktop.in:11
+msgid "Radio;"
+msgstr "Radio;"
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:9
+msgid "Program to listen to web radios"
+msgstr "Un programme pour écouter des webradios"
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:11
+msgid ""
+"Listen to web radios from all around the world. This program uses the radio-"
+"browser.info community made database of radios, to provide you with the "
+"biggest list of radios available online."
+msgstr ""
+"Écoutez des webradios du monde entier. Ce programme utilise la base de "
+"données de radios communautaire radio-browser.info pour vous fournir la plus "
+"grande liste de radios disponibles en ligne."
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:20
+msgid ""
+"redesign, added advanced search filters, added a discover page, added "
+"recents page, added cli search."
+msgstr ""
+"Reconception, ajout des filtres de recherche avancée, ajout de la page "
+"Découvrir et Récents, ajout de la recherche en ligne de commande."
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:27
+msgid "initial release"
+msgstr "Version initiale"
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:50
+msgid "ranfdev"
+msgstr "ranfdev"

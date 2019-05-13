@@ -171,20 +171,20 @@ namespace raddiu {
       window.get_style_context().add_class("rounded");
 
 
-      window.title = "raddiu";
+      window.title = _("Raddiu");
       window.set_default_size (900, 640);
 
       stack = new Gtk.Stack();
       stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
 
       discover = new Views.Discover();
-      stack.add_titled(discover, "discover","Discover");
+      stack.add_titled(discover, "discover", _("Discover"));
 
       search = new Views.Search();
-      stack.add_titled(search, "search", "Search");
+      stack.add_titled(search, "search", _("Search"));
 
       recents = new Views.Recents();
-      stack.add_titled(recents, "recents", "Recents");
+      stack.add_titled(recents, "recents", _("Recents"));
 
       var stack_switcher = new Gtk.StackSwitcher();
 
@@ -194,8 +194,8 @@ namespace raddiu {
 
       // Notify user if mpv is not found
       var dialog = new Granite.MessageDialog.with_image_from_icon_name(
-        "The program mpv is not installed", 
-        "Raddiu to function needs to use the program mpv. Install it with your package manager (eg: 'sudo apt install mpv')",
+        _("The program mpv is not installed"), 
+        _("Raddiu to function needs to use the program mpv. Install it with your package manager (eg: 'sudo apt install mpv')"),
         "dialog-error"
         );
       dialog.response.connect(() => {

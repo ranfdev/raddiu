@@ -16,7 +16,7 @@ public class raddiu.Widgets.PlayingPanel : Gtk.Box {
     image.width_request = 200;
     pack_start (image);
 
-    label = new Gtk.Label("title");
+    label = new Gtk.Label(_("Title"));
     label.get_style_context().add_class(Granite.STYLE_CLASS_H2_LABEL);
     add (label);
 
