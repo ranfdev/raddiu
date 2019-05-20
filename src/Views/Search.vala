@@ -17,12 +17,12 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
   public Gtk.SearchEntry tags_entry;
 
   public void reset_filters() {
-      search_entry.text = "";
-      order_combo_box.active_id = "votes";
-      reverse_combo_box.active_id = "descending";
-      language_combo_box.active_id = "";
-      country_combo_box.active_id = "";
-      tags_entry.text = "";
+    search_entry.text = "";
+    order_combo_box.active_id = "votes";
+    reverse_combo_box.active_id = "descending";
+    language_combo_box.active_id = "";
+    country_combo_box.active_id = "";
+    tags_entry.text = "";
   }
 
   public void load() {
@@ -94,7 +94,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
 
     search_entry = new Gtk.SearchEntry();
     search_entry.margin = 10;
-    search_entry.placeholder_text = "Search by radio name...";
+    search_entry.placeholder_text = _("Search by radio name...");
     content.add(search_entry);
 
     search_entry.search_changed.connect(() => {
@@ -115,13 +115,13 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     option_container.selection_mode = Gtk.SelectionMode.NONE;
     content.add(option_container);
 
-    
+
     // Filter by country
 
     var option_row_country = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
     option_container.add(option_row_country);
 
-    var country_label = new Gtk.Label("Country:");
+    var country_label = new Gtk.Label(_("Country:"));
     option_row_country.add(country_label);
 
     country_combo_box = new Gtk.ComboBoxText.with_entry();
@@ -136,34 +136,31 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     var option_row_order = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
     option_container.add(option_row_order);
 
-    var order_label = new Gtk.Label("Order by:");
+    var order_label = new Gtk.Label(_("Order by:"));
     option_row_order.add(order_label);
 
-    string possible_orders[] = {
-      "votes",
-      "clickcount",
-      "name",
-      "country",
-      "state",
-      "tags",
-      "url",
-      "homepage",
-      "bitrate",
-      "clicktrend",
-      "favicon",
-      "language",
-      "negativevotes",
-      "codec",
-      "lastcheckok",
-      "lastchecktime",
-      "clicktimestamp"
+    string[,] possible_orders = {
+      {"votes",_("votes")},
+      {"clickcount",_("click count")},
+      {"name",_("name")},
+      {"country",_("country")},
+      {"state",_("state")},
+      {"tags",_("tags")},
+      {"url",_("url")},
+      {"homepage",_("homepage")},
+      {"bitrate",_("bitrate")},
+      {"clicktrend",_("click trend")},
+      {"favicon",_("favicon")},
+      {"language",_("language")},
+      {"negativevotes",_("negative votes")},
+      {"codec",_("codec")},
     };
 
     order_combo_box = new Gtk.ComboBoxText.with_entry();
     order_combo_box.append("","");
 
-    foreach (var order in possible_orders) {
-      order_combo_box.append(order,order);
+    for (var i = 0; i < possible_orders.length[0]; i++) {
+      order_combo_box.append(possible_orders[i,0],possible_orders[i,1]);
     }
     order_combo_box.active = 1;
     option_row_order.pack_end(order_combo_box);
@@ -176,7 +173,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     var option_row_language = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
     option_container.add(option_row_language);
 
-    var language_label = new Gtk.Label("Language:");
+    var language_label = new Gtk.Label(_("Language:"));
     option_row_language.add(language_label);
 
     language_combo_box = new Gtk.ComboBoxText.with_entry();
@@ -192,7 +189,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     var option_row_tags = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
     option_container.add(option_row_tags);
 
-    var tags_label = new Gtk.Label("Tags:");
+    var tags_label = new Gtk.Label(_("Tags:"));
     option_row_tags.add(tags_label);
 
     tags_entry = new Gtk.SearchEntry();
@@ -206,12 +203,12 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     var option_row_reverse = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
     option_container.add(option_row_reverse);
 
-    var reverse_label = new Gtk.Label("Reverse:");
+    var reverse_label = new Gtk.Label(_("Reverse:"));
     option_row_reverse.add(reverse_label);
 
     reverse_combo_box = new Gtk.ComboBoxText();
-    reverse_combo_box.append("descending","descending");
-    reverse_combo_box.append("ascending","ascending");
+    reverse_combo_box.append("descending",_("descending"));
+    reverse_combo_box.append("ascending",_("ascending"));
     reverse_combo_box.active = 0;
     option_row_reverse.pack_end(reverse_combo_box);
 
@@ -238,7 +235,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
 
     // Alert view
 
-    alert_view = new Granite.Widgets.AlertView("No results","Try to change your search query", "system-search-symbolic");
+    alert_view = new Granite.Widgets.AlertView(_("No results"),_("Try to change your search query"), "system-search-symbolic");
     alert_view.hide();
     content.add(alert_view);
 
@@ -249,7 +246,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     spinner.margin = 10;
     content.add(spinner);
 
-    
+
 
     edge_reached.connect((top, position) => {
       if (position == Gtk.PositionType.BOTTOM) {

@@ -1,0 +1,187 @@
+# Italian translations for com.github.ranfdev.raddiu package.
+# Copyright (C) 2019 THE com.github.ranfdev.raddiu'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.ranfdev.raddiu package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.ranfdev.raddiu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-20 21:50+0200\n"
+"PO-Revision-Date: 2019-05-19 17:51+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/Application.vala:181
+msgid "Discover"
+msgstr "Scopri"
+
+#: src/Application.vala:184
+msgid "Search"
+msgstr "Cerca"
+
+#: src/Application.vala:187
+msgid "Recents"
+msgstr "Recenti"
+
+#: src/Application.vala:197
+msgid "The program mpv is not installed"
+msgstr "Il programma mpv non e' installato"
+
+#: src/Application.vala:198
+msgid ""
+"Raddiu to function needs to use the program mpv. Install it with your "
+"package manager"
+msgstr ""
+"Raddiu per funzionare ha bisogno del programma mpv. Installalo con il tuo "
+"gestore dei pacchetti"
+
+#: src/Views/Search.vala:97
+msgid "Search by radio name..."
+msgstr "Cerca una radio per nome..."
+
+#: src/Views/Search.vala:124
+msgid "Country:"
+msgstr "Nazione:"
+
+#: src/Views/Search.vala:139
+msgid "Order by:"
+msgstr "Ordina per:"
+
+#: src/Views/Search.vala:143
+msgid "votes"
+msgstr "voti"
+
+#: src/Views/Search.vala:144
+#, fuzzy
+msgid "click count"
+msgstr "numero di click"
+
+#: src/Views/Search.vala:145
+msgid "name"
+msgstr "nome"
+
+#: src/Views/Search.vala:146
+msgid "country"
+msgstr "nazione"
+
+#: src/Views/Search.vala:147
+msgid "state"
+msgstr "stato"
+
+#: src/Views/Search.vala:148
+msgid "tags"
+msgstr "tags"
+
+#: src/Views/Search.vala:149
+msgid "url"
+msgstr "url"
+
+#: src/Views/Search.vala:150
+msgid "homepage"
+msgstr "pagina home"
+
+#: src/Views/Search.vala:151
+msgid "bitrate"
+msgstr "bitrate"
+
+#: src/Views/Search.vala:152
+#, fuzzy
+msgid "click trend"
+msgstr "tendenza di click"
+
+#: src/Views/Search.vala:153
+msgid "favicon"
+msgstr "favicon"
+
+#: src/Views/Search.vala:154
+msgid "language"
+msgstr "lingua"
+
+#: src/Views/Search.vala:155
+#, fuzzy
+msgid "negative votes"
+msgstr "voti negativi"
+
+#: src/Views/Search.vala:156
+msgid "codec"
+msgstr "codec"
+
+#: src/Views/Search.vala:176
+msgid "Language:"
+msgstr "Lingua:"
+
+#: src/Views/Search.vala:192
+msgid "Tags:"
+msgstr "Tags:"
+
+#: src/Views/Search.vala:206
+msgid "Reverse:"
+msgstr "Inverti:"
+
+#: src/Views/Search.vala:210
+msgid "descending"
+msgstr "decrescente"
+
+#: src/Views/Search.vala:211
+msgid "ascending"
+msgstr "crescente"
+
+#: src/Views/Search.vala:238
+msgid "No results"
+msgstr "Nessun risultato"
+
+#: src/Views/Search.vala:238
+msgid "Try to change your search query"
+msgstr "Prova a cambiare la ricerca"
+
+#: data/com.github.ranfdev.raddiu.desktop.in:4
+#: data/com.github.ranfdev.raddiu.desktop.in:6
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:8
+msgid "Raddiu"
+msgstr "Raddiu"
+
+#: data/com.github.ranfdev.raddiu.desktop.in:5
+msgid "Listen to web radios"
+msgstr "Ascolta le web radio"
+
+#: data/com.github.ranfdev.raddiu.desktop.in:8
+msgid "com.github.ranfdev.raddiu"
+msgstr "com.github.ranfdev.raddiu"
+
+#: data/com.github.ranfdev.raddiu.desktop.in:11
+msgid "Radio;"
+msgstr "Radio;"
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:9
+msgid "Program to listen to web radios"
+msgstr "Programma per ascoltare le web radio"
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:11
+msgid ""
+"Listen to web radios from all around the world. This program uses the radio-"
+"browser.info community made database of radios, to provide you with the "
+"biggest list of radios available online."
+msgstr ""
+"Ascolta le web radio di tutto il mondo. Questo programma usa il database di "
+"radio radio-browser.info fatto dalla communityper darti la lista di radio "
+"piu' ampia al mondo disponibile online"
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:20
+msgid ""
+"redesign, added advanced search filters, added a discover page, added "
+"recents page, added cli search."
+msgstr ""
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:27
+msgid "initial release"
+msgstr ""
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:50
+msgid "ranfdev"
+msgstr "ranfdev"

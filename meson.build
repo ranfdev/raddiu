@@ -6,12 +6,6 @@ message ('project name and programming language')
 # Adds project arguments
 message ('Adds project arguments')
 
-add_project_arguments([
-        '-DGETTEXT_PACKAGE=\"@0@\"'.format(meson.project_name())
-    ],
-    language: 'c',
-)
-
 # Include the translations module
 message('Include the translations module')
 
@@ -20,7 +14,7 @@ i18n = import('i18n')
 # Set our translation domain
 message ('Set our translation domain')
 
-add_global_arguments('-DGETTEXT_PACKAGE=\"@0@\"'.format (meson.project_name()), language:'c')
+add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language:'c')
 
 # Adding deps
 message ('Listing dependencies')
@@ -82,14 +76,8 @@ conf_data.set_quoted('PREFIX', get_option('prefix'))
 
 message ('Configuring desktop entry: ' + meson.project_name() + '.desktop')
 
-desktop_in_file = configure_file(
-    input: join_paths('data', meson.project_name() + '.desktop.in.in'),
-    output: '@BASENAME@',
-    configuration: config_data
-)
-
 desktop_file = i18n.merge_file(
-    input: desktop_in_file,
+    input: join_paths (meson.source_root(), 'data', meson.project_name() + '.desktop.in'),
     output: meson.project_name() + '.desktop',
     po_dir: join_paths(meson.source_root(), 'po'),
     type: 'desktop',
@@ -104,6 +92,8 @@ appstream_file = i18n.merge_file(
     install: true,
     install_dir: join_paths(get_option('datadir'), 'metainfo')
 )
+
+subdir('po')
 
 message ('Adds files to build')
 
