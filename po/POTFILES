@@ -1,0 +1,5 @@
+src/Views/Discover.vala
+src/Views/Search.vala
+src/Widgets/Radio.vala
+src/Widgets/PlayingPanel.vala
+src/Application.vala

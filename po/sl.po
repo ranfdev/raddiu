@@ -1,0 +1,101 @@
+# Slovenian translations for com.github.ranfdev.raddiu package.
+# Copyright (C) 2019 THE com.github.ranfdev.raddiu'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.ranfdev.raddiu package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.ranfdev.raddiu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-13 13:11+0200\n"
+"PO-Revision-Date: 2019-05-13 11:29+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
+
+#: src/Views/Discover.vala:37
+msgid "Top"
+msgstr ""
+
+#: src/Views/Discover.vala:40
+msgid "Expand"
+msgstr ""
+
+#: src/Views/Discover.vala:62
+msgid "By Genres"
+msgstr ""
+
+#: src/Views/Search.vala:97
+msgid "Search by radio name..."
+msgstr ""
+
+#: src/Views/Search.vala:124
+msgid "Country:"
+msgstr ""
+
+#: src/Views/Search.vala:139
+msgid "Order by:"
+msgstr ""
+
+#: src/Views/Search.vala:179
+msgid "Language:"
+msgstr ""
+
+#: src/Views/Search.vala:195
+msgid "Tags:"
+msgstr ""
+
+#: src/Views/Search.vala:199
+msgid "blues, jazz, rock, punk..."
+msgstr ""
+
+#: src/Views/Search.vala:209
+msgid "Reverse:"
+msgstr ""
+
+#: src/Views/Search.vala:241
+msgid "No results"
+msgstr ""
+
+#: src/Views/Search.vala:241
+msgid "Try to change your search query"
+msgstr ""
+
+#: src/Widgets/Radio.vala:29
+msgid "Votes: "
+msgstr ""
+
+#: src/Widgets/PlayingPanel.vala:19
+msgid "Title"
+msgstr ""
+
+#: src/Application.vala:174
+msgid "Raddiu"
+msgstr ""
+
+#: src/Application.vala:181
+msgid "Discover"
+msgstr ""
+
+#: src/Application.vala:184
+msgid "Search"
+msgstr ""
+
+#: src/Application.vala:187
+msgid "Recents"
+msgstr ""
+
+#: src/Application.vala:197
+msgid "The program mpv is not installed"
+msgstr ""
+
+#: src/Application.vala:198
+msgid ""
+"Raddiu to function needs to use the program mpv. Install it with your "
+"package manager (eg: 'sudo apt install mpv')"
+msgstr ""

@@ -1,0 +1,60 @@
+# Bihari translations for extra package.
+# Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-13 11:46+0200\n"
+"PO-Revision-Date: 2019-05-13 11:30+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: bh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/com.github.ranfdev.raddiu.desktop.in:4
+#: data/com.github.ranfdev.raddiu.desktop.in:6
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:8
+msgid "Raddiu"
+msgstr ""
+
+#: data/com.github.ranfdev.raddiu.desktop.in:5
+msgid "Listen to web radios"
+msgstr ""
+
+#: data/com.github.ranfdev.raddiu.desktop.in:8
+msgid "com.github.ranfdev.raddiu"
+msgstr ""
+
+#: data/com.github.ranfdev.raddiu.desktop.in:11
+msgid "Radio;"
+msgstr ""
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:9
+msgid "Program to listen to web radios"
+msgstr ""
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:11
+msgid ""
+"Listen to web radios from all around the world. This program uses the radio-"
+"browser.info community made database of radios, to provide you with the "
+"biggest list of radios available online."
+msgstr ""
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:20
+msgid ""
+"redesign, added advanced search filters, added a discover page, added "
+"recents page, added cli search."
+msgstr ""
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:27
+msgid "initial release"
+msgstr ""
+
+#: data/com.github.ranfdev.raddiu.appdata.xml.in:50
+msgid "ranfdev"
+msgstr ""

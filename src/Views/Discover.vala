@@ -34,10 +34,10 @@ public class raddiu.Views.Discover: Gtk.ScrolledWindow {
     var top_row = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
     content.add(top_row);
 
-    var top_title = new Granite.HeaderLabel("Top");
+    var top_title = new Granite.HeaderLabel(_("Top"));
     top_row.add(top_title);
 
-    var top_expand_button = new Gtk.Button.with_label("Expand");
+    var top_expand_button = new Gtk.Button.with_label(_("Expand"));
     top_expand_button.halign = Gtk.Align.END;
     top_expand_button.clicked.connect(() => {
       Raddiu.search.reset_filters();
@@ -59,7 +59,7 @@ public class raddiu.Views.Discover: Gtk.ScrolledWindow {
 
     top_fetcher.load.begin("");
 
-    var genre_title = new Granite.HeaderLabel("By Genres");
+    var genre_title = new Granite.HeaderLabel(_("By Genres"));
     content.add(genre_title);
 
     var genres_container = new Gtk.FlowBox();
