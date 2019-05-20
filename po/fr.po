@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.ranfdev.raddiu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-13 13:11+0200\n"
+"POT-Creation-Date: 2019-05-21 00:19+0200\n"
 "PO-Revision-Date: 2019-05-13 11:29+0200\n"
 "Last-Translator: NathanBnm\n"
 "Language-Team: none\n"
@@ -41,27 +41,94 @@ msgstr "Pays :"
 msgid "Order by:"
 msgstr "Trier par :"
 
-#: src/Views/Search.vala:179
+#: src/Views/Search.vala:143
+#, fuzzy
+msgid "votes"
+msgstr "Votes : "
+
+#: src/Views/Search.vala:144
+msgid "click count"
+msgstr ""
+
+#: src/Views/Search.vala:145
+msgid "name"
+msgstr ""
+
+#: src/Views/Search.vala:146
+#, fuzzy
+msgid "country"
+msgstr "Pays :"
+
+#: src/Views/Search.vala:147
+msgid "state"
+msgstr ""
+
+#: src/Views/Search.vala:148
+msgid "tags"
+msgstr ""
+
+#: src/Views/Search.vala:149
+msgid "url"
+msgstr ""
+
+#: src/Views/Search.vala:150
+msgid "homepage"
+msgstr ""
+
+#: src/Views/Search.vala:151
+msgid "bitrate"
+msgstr ""
+
+#: src/Views/Search.vala:152
+msgid "click trend"
+msgstr ""
+
+#: src/Views/Search.vala:153
+msgid "favicon"
+msgstr ""
+
+#: src/Views/Search.vala:154
+#, fuzzy
+msgid "language"
+msgstr "Langue :"
+
+#: src/Views/Search.vala:155
+msgid "negative votes"
+msgstr ""
+
+#: src/Views/Search.vala:156
+msgid "codec"
+msgstr ""
+
+#: src/Views/Search.vala:176
 msgid "Language:"
 msgstr "Langue :"
 
-#: src/Views/Search.vala:195
+#: src/Views/Search.vala:192
 msgid "Tags:"
 msgstr "Tags :"
 
-#: src/Views/Search.vala:199
+#: src/Views/Search.vala:196
 msgid "blues, jazz, rock, punk..."
 msgstr "blues, jazz, rock, punk..."
 
-#: src/Views/Search.vala:209
+#: src/Views/Search.vala:206
 msgid "Reverse:"
 msgstr "Ordre :"
 
-#: src/Views/Search.vala:241
+#: src/Views/Search.vala:210
+msgid "descending"
+msgstr ""
+
+#: src/Views/Search.vala:211
+msgid "ascending"
+msgstr ""
+
+#: src/Views/Search.vala:238
 msgid "No results"
 msgstr "Aucun résultat"
 
-#: src/Views/Search.vala:241
+#: src/Views/Search.vala:238
 msgid "Try to change your search query"
 msgstr "Essayez de modifier votre recherche"
 
@@ -73,7 +140,8 @@ msgstr "Votes : "
 msgid "Title"
 msgstr "Titre"
 
-#: src/Application.vala:174
+#: src/Application.vala:174 data/com.github.ranfdev.raddiu.desktop.in:4
+#: data/com.github.ranfdev.raddiu.desktop.in:6
 msgid "Raddiu"
 msgstr "Raddiu"
 
@@ -94,9 +162,22 @@ msgid "The program mpv is not installed"
 msgstr "Le programme mpv n'est pas installé"
 
 #: src/Application.vala:198
+#, fuzzy
 msgid ""
 "Raddiu to function needs to use the program mpv. Install it with your "
-"package manager (eg: 'sudo apt install mpv')"
+"package manager"
 msgstr ""
 "Raddiu à besoin du programme mpv pour fonctionner. Installez le avec votre "
 "gestionnaire de paquets (ex : 'sudo apt install mpv')"
+
+#: data/com.github.ranfdev.raddiu.desktop.in:5
+msgid "Listen to web radios"
+msgstr ""
+
+#: data/com.github.ranfdev.raddiu.desktop.in:8
+msgid "com.github.ranfdev.raddiu"
+msgstr ""
+
+#: data/com.github.ranfdev.raddiu.desktop.in:11
+msgid "Radio;"
+msgstr ""

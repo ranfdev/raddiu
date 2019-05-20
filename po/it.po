@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.ranfdev.raddiu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-13 13:11+0200\n"
-"PO-Revision-Date: 2019-05-13 11:29+0200\n"
+"POT-Creation-Date: 2019-05-21 00:19+0200\n"
+"PO-Revision-Date: 2019-05-19 17:51+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=ASCII\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
@@ -31,70 +31,168 @@ msgstr ""
 
 #: src/Views/Search.vala:97
 msgid "Search by radio name..."
-msgstr ""
+msgstr "Cerca una radio per nome..."
 
 #: src/Views/Search.vala:124
 msgid "Country:"
-msgstr ""
+msgstr "Nazione:"
 
 #: src/Views/Search.vala:139
 msgid "Order by:"
-msgstr ""
+msgstr "Ordina per:"
 
-#: src/Views/Search.vala:179
+#: src/Views/Search.vala:143
+msgid "votes"
+msgstr "voti"
+
+#: src/Views/Search.vala:144
+#, fuzzy
+msgid "click count"
+msgstr "numero di click"
+
+#: src/Views/Search.vala:145
+msgid "name"
+msgstr "nome"
+
+#: src/Views/Search.vala:146
+msgid "country"
+msgstr "nazione"
+
+#: src/Views/Search.vala:147
+msgid "state"
+msgstr "stato"
+
+#: src/Views/Search.vala:148
+msgid "tags"
+msgstr "tags"
+
+#: src/Views/Search.vala:149
+msgid "url"
+msgstr "url"
+
+#: src/Views/Search.vala:150
+msgid "homepage"
+msgstr "pagina home"
+
+#: src/Views/Search.vala:151
+msgid "bitrate"
+msgstr "bitrate"
+
+#: src/Views/Search.vala:152
+#, fuzzy
+msgid "click trend"
+msgstr "tendenza di click"
+
+#: src/Views/Search.vala:153
+msgid "favicon"
+msgstr "favicon"
+
+#: src/Views/Search.vala:154
+msgid "language"
+msgstr "lingua"
+
+#: src/Views/Search.vala:155
+#, fuzzy
+msgid "negative votes"
+msgstr "voti negativi"
+
+#: src/Views/Search.vala:156
+msgid "codec"
+msgstr "codec"
+
+#: src/Views/Search.vala:176
 msgid "Language:"
-msgstr ""
+msgstr "Lingua:"
 
-#: src/Views/Search.vala:195
+#: src/Views/Search.vala:192
 msgid "Tags:"
-msgstr ""
+msgstr "Tags:"
 
-#: src/Views/Search.vala:199
+#: src/Views/Search.vala:196
 msgid "blues, jazz, rock, punk..."
 msgstr ""
 
-#: src/Views/Search.vala:209
+#: src/Views/Search.vala:206
 msgid "Reverse:"
-msgstr ""
+msgstr "Inverti:"
 
-#: src/Views/Search.vala:241
+#: src/Views/Search.vala:210
+msgid "descending"
+msgstr "decrescente"
+
+#: src/Views/Search.vala:211
+msgid "ascending"
+msgstr "crescente"
+
+#: src/Views/Search.vala:238
 msgid "No results"
-msgstr ""
+msgstr "Nessun risultato"
 
-#: src/Views/Search.vala:241
+#: src/Views/Search.vala:238
 msgid "Try to change your search query"
-msgstr ""
+msgstr "Prova a cambiare la ricerca"
 
 #: src/Widgets/Radio.vala:29
+#, fuzzy
 msgid "Votes: "
-msgstr ""
+msgstr "voti"
 
 #: src/Widgets/PlayingPanel.vala:19
 msgid "Title"
 msgstr ""
 
-#: src/Application.vala:174
+#: src/Application.vala:174 data/com.github.ranfdev.raddiu.desktop.in:4
+#: data/com.github.ranfdev.raddiu.desktop.in:6
 msgid "Raddiu"
-msgstr ""
+msgstr "Raddiu"
 
 #: src/Application.vala:181
 msgid "Discover"
-msgstr ""
+msgstr "Scopri"
 
 #: src/Application.vala:184
 msgid "Search"
-msgstr ""
+msgstr "Cerca"
 
 #: src/Application.vala:187
 msgid "Recents"
-msgstr ""
+msgstr "Recenti"
 
 #: src/Application.vala:197
 msgid "The program mpv is not installed"
-msgstr ""
+msgstr "Il programma mpv non e' installato"
 
 #: src/Application.vala:198
 msgid ""
 "Raddiu to function needs to use the program mpv. Install it with your "
-"package manager (eg: 'sudo apt install mpv')"
+"package manager"
 msgstr ""
+"Raddiu per funzionare ha bisogno del programma mpv. Installalo con il tuo "
+"gestore dei pacchetti"
+
+#: data/com.github.ranfdev.raddiu.desktop.in:5
+msgid "Listen to web radios"
+msgstr "Ascolta le web radio"
+
+#: data/com.github.ranfdev.raddiu.desktop.in:8
+msgid "com.github.ranfdev.raddiu"
+msgstr "com.github.ranfdev.raddiu"
+
+#: data/com.github.ranfdev.raddiu.desktop.in:11
+msgid "Radio;"
+msgstr "Radio;"
+
+#~ msgid "Program to listen to web radios"
+#~ msgstr "Programma per ascoltare le web radio"
+
+#~ msgid ""
+#~ "Listen to web radios from all around the world. This program uses the "
+#~ "radio-browser.info community made database of radios, to provide you with "
+#~ "the biggest list of radios available online."
+#~ msgstr ""
+#~ "Ascolta le web radio di tutto il mondo. Questo programma usa il database "
+#~ "di radio radio-browser.info fatto dalla communityper darti la lista di "
+#~ "radio piu' ampia al mondo disponibile online"
+
+#~ msgid "ranfdev"
+#~ msgstr "ranfdev"

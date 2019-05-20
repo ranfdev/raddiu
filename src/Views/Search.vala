@@ -17,12 +17,12 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
   public Gtk.SearchEntry tags_entry;
 
   public void reset_filters() {
-      search_entry.text = "";
-      order_combo_box.active_id = "votes";
-      reverse_combo_box.active_id = "descending";
-      language_combo_box.active_id = "";
-      country_combo_box.active_id = "";
-      tags_entry.text = "";
+    search_entry.text = "";
+    order_combo_box.active_id = "votes";
+    reverse_combo_box.active_id = "descending";
+    language_combo_box.active_id = "";
+    country_combo_box.active_id = "";
+    tags_entry.text = "";
   }
 
   public void load() {
@@ -115,7 +115,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     option_container.selection_mode = Gtk.SelectionMode.NONE;
     content.add(option_container);
 
-    
+
     // Filter by country
 
     var option_row_country = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
@@ -139,31 +139,28 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     var order_label = new Gtk.Label(_("Order by:"));
     option_row_order.add(order_label);
 
-    string possible_orders[] = {
-      "votes",
-      "clickcount",
-      "name",
-      "country",
-      "state",
-      "tags",
-      "url",
-      "homepage",
-      "bitrate",
-      "clicktrend",
-      "favicon",
-      "language",
-      "negativevotes",
-      "codec",
-      "lastcheckok",
-      "lastchecktime",
-      "clicktimestamp"
+    string[,] possible_orders = {
+      {"votes",_("votes")},
+      {"clickcount",_("click count")},
+      {"name",_("name")},
+      {"country",_("country")},
+      {"state",_("state")},
+      {"tags",_("tags")},
+      {"url",_("url")},
+      {"homepage",_("homepage")},
+      {"bitrate",_("bitrate")},
+      {"clicktrend",_("click trend")},
+      {"favicon",_("favicon")},
+      {"language",_("language")},
+      {"negativevotes",_("negative votes")},
+      {"codec",_("codec")},
     };
 
     order_combo_box = new Gtk.ComboBoxText.with_entry();
     order_combo_box.append("","");
 
-    foreach (var order in possible_orders) {
-      order_combo_box.append(order,order);
+    for (var i = 0; i < possible_orders.length[0]; i++) {
+      order_combo_box.append(possible_orders[i,0],possible_orders[i,1]);
     }
     order_combo_box.active = 1;
     option_row_order.pack_end(order_combo_box);
@@ -210,8 +207,8 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     option_row_reverse.add(reverse_label);
 
     reverse_combo_box = new Gtk.ComboBoxText();
-    reverse_combo_box.append("descending","descending");
-    reverse_combo_box.append("ascending","ascending");
+    reverse_combo_box.append("descending",_("descending"));
+    reverse_combo_box.append("ascending",_("ascending"));
     reverse_combo_box.active = 0;
     option_row_reverse.pack_end(reverse_combo_box);
 
@@ -249,7 +246,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     spinner.margin = 10;
     content.add(spinner);
 
-    
+
 
     edge_reached.connect((top, position) => {
       if (position == Gtk.PositionType.BOTTOM) {

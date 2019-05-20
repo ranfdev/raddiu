@@ -1,6 +1,7 @@
 project('com.github.ranfdev.raddiu', 'vala', 'c', version: '0.1.0')
 
 i18n = import('i18n')
+
 gnome = import ('gnome')
 
 add_global_arguments(

@@ -195,7 +195,7 @@ namespace raddiu {
       // Notify user if mpv is not found
       var dialog = new Granite.MessageDialog.with_image_from_icon_name(
         _("The program mpv is not installed"), 
-        _("Raddiu to function needs to use the program mpv. Install it with your package manager (eg: 'sudo apt install mpv')"),
+        _("Raddiu to function needs to use the program mpv. Install it with your package manager"),
         "dialog-error"
         );
       dialog.response.connect(() => {
