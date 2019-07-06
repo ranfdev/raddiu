@@ -45,7 +45,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     fetcher.parameters.set_data("country", country_combo_box.get_active_text());
 
     // Reverse results order
-    var reverse_string = reverse_combo_box.get_active_text() == "descending" ? "true" : "false";
+    var reverse_string = reverse_combo_box.active_id == "descending" ? "true" : "false";
     fetcher.parameters.set_data("reverse", reverse_string);
 
     // Filter by tag only if tag list is present
@@ -85,6 +85,7 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
   }
   public Search() {
 
+    hscrollbar_policy = Gtk.PolicyType.NEVER;
     content = new Gtk.Box(Gtk.Orientation.VERTICAL,5);
     content.margin = 10;
     add(content);

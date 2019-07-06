@@ -27,6 +27,7 @@ public class raddiu.Views.Discover: Gtk.ScrolledWindow {
     "trap"
   };
   public Discover() {
+    hscrollbar_policy = Gtk.PolicyType.NEVER;
     content = new Gtk.Box(Gtk.Orientation.VERTICAL, 5);
     content.margin = 10;
     add(content);

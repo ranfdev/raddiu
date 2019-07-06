@@ -58,6 +58,7 @@ public class raddiu.Views.Recents: Gtk.ScrolledWindow {
   }
 
   public Recents() {
+    hscrollbar_policy = Gtk.PolicyType.NEVER;
     recents = new GenericArray<RadioData>();
     parser = new Json.Parser();
     load();
