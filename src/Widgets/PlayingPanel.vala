@@ -18,6 +18,7 @@ public class raddiu.Widgets.PlayingPanel : Gtk.Box {
 
     label = new Gtk.Label(_("Title"));
     label.get_style_context().add_class(Granite.STYLE_CLASS_H2_LABEL);
+    label.wrap = true;
     add (label);
 
     toggler = new Gtk.Image ();
