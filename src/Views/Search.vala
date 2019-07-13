@@ -40,9 +40,9 @@ public class raddiu.Views.Search: Gtk.ScrolledWindow {
     fetcher.parameters.set_data("name", query);
     fetcher.parameters.set_data("offset", @"$loaded");
     fetcher.parameters.set_data("limit", "40");
-    fetcher.parameters.set_data("language", language_combo_box.get_active_text());
-    fetcher.parameters.set_data("order", order_combo_box.get_active_text());
-    fetcher.parameters.set_data("country", country_combo_box.get_active_text());
+    fetcher.parameters.set_data("language", language_combo_box.active_id );
+    fetcher.parameters.set_data("order", order_combo_box.active_id );
+    fetcher.parameters.set_data("country", country_combo_box.active_id );
 
     // Reverse results order
     var reverse_string = reverse_combo_box.active_id == "descending" ? "true" : "false";
