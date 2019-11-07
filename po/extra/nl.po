@@ -8,36 +8,37 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-13 11:46+0200\n"
-"PO-Revision-Date: 2019-05-13 11:30+0200\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2019-11-07 14:11+0100\n"
+"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: none\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: data/com.github.ranfdev.raddiu.desktop.in:4
 #: data/com.github.ranfdev.raddiu.desktop.in:6
 #: data/com.github.ranfdev.raddiu.appdata.xml.in:8
 msgid "Raddiu"
-msgstr ""
+msgstr "Raddiu"
 
 #: data/com.github.ranfdev.raddiu.desktop.in:5
 msgid "Listen to web radios"
-msgstr ""
+msgstr "Luister naar online-radiostations"
 
 #: data/com.github.ranfdev.raddiu.desktop.in:8
 msgid "com.github.ranfdev.raddiu"
-msgstr ""
+msgstr "com.github.ranfdev.raddiu"
 
 #: data/com.github.ranfdev.raddiu.desktop.in:11
 msgid "Radio;"
-msgstr ""
+msgstr "Radio;"
 
 #: data/com.github.ranfdev.raddiu.appdata.xml.in:9
 msgid "Program to listen to web radios"
-msgstr ""
+msgstr "Toepassing om te luisteren naar online-radiostations"
 
 #: data/com.github.ranfdev.raddiu.appdata.xml.in:11
 msgid ""
@@ -45,17 +46,23 @@ msgid ""
 "browser.info community made database of radios, to provide you with the "
 "biggest list of radios available online."
 msgstr ""
+"Luister naar online-radiostations van over de hele wereld. Deze toepassing "
+"gebruikt de databank radio-browser.info om je de uitgebreidste online-lijst "
+"met radiostations voor te schotelen."
 
 #: data/com.github.ranfdev.raddiu.appdata.xml.in:20
 msgid ""
 "redesign, added advanced search filters, added a discover page, added "
 "recents page, added cli search."
 msgstr ""
+"Opnieuw ontworpen, uitgebreide zoekfilters toegevoegd, alsmede pagina's "
+"voor uitgelichte stations, recente stations en zoeken middels de "
+"opdrachtregel."
 
 #: data/com.github.ranfdev.raddiu.appdata.xml.in:27
 msgid "initial release"
-msgstr ""
+msgstr "Initiële uitgave"
 
 #: data/com.github.ranfdev.raddiu.appdata.xml.in:50
 msgid "ranfdev"
-msgstr ""
+msgstr "ranfdev"
