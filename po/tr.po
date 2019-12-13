@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: com.github.ranfdev.raddiu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-21 00:19+0200\n"
-"PO-Revision-Date: 2019-05-13 11:29+0200\n"
+"PO-Revision-Date: 2019-12-13 20:56+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: tr\n"
@@ -16,162 +16,167 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: src/Views/Discover.vala:37
 msgid "Top"
-msgstr ""
+msgstr "Üst"
 
 #: src/Views/Discover.vala:40
 msgid "Expand"
-msgstr ""
+msgstr "Genişlet"
 
 #: src/Views/Discover.vala:62
 msgid "By Genres"
-msgstr ""
+msgstr "Türe Göre"
 
 #: src/Views/Search.vala:97
 msgid "Search by radio name..."
-msgstr ""
+msgstr "Radyo adına göre ara..."
 
 #: src/Views/Search.vala:124
 msgid "Country:"
-msgstr ""
+msgstr "Ülke:"
 
 #: src/Views/Search.vala:139
 msgid "Order by:"
-msgstr ""
+msgstr "Sırala:"
 
 #: src/Views/Search.vala:143
 msgid "votes"
-msgstr ""
+msgstr "oy"
 
 #: src/Views/Search.vala:144
 msgid "click count"
-msgstr ""
+msgstr "tıklama sayısı"
 
 #: src/Views/Search.vala:145
 msgid "name"
-msgstr ""
+msgstr "ad"
 
 #: src/Views/Search.vala:146
 msgid "country"
-msgstr ""
+msgstr "ülke"
 
 #: src/Views/Search.vala:147
 msgid "state"
-msgstr ""
+msgstr "eyalet"
 
 #: src/Views/Search.vala:148
 msgid "tags"
-msgstr ""
+msgstr "etiketler"
 
 #: src/Views/Search.vala:149
 msgid "url"
-msgstr ""
+msgstr "adres"
 
 #: src/Views/Search.vala:150
 msgid "homepage"
-msgstr ""
+msgstr "anasayfa"
 
 #: src/Views/Search.vala:151
 msgid "bitrate"
-msgstr ""
+msgstr "bithızı"
 
 #: src/Views/Search.vala:152
 msgid "click trend"
-msgstr ""
+msgstr "tıklama trendi"
 
 #: src/Views/Search.vala:153
 msgid "favicon"
-msgstr ""
+msgstr "favicon"
 
 #: src/Views/Search.vala:154
 msgid "language"
-msgstr ""
+msgstr "dil"
 
 #: src/Views/Search.vala:155
 msgid "negative votes"
-msgstr ""
+msgstr "olumsuz oylar"
 
 #: src/Views/Search.vala:156
 msgid "codec"
-msgstr ""
+msgstr "kodlama"
 
 #: src/Views/Search.vala:176
 msgid "Language:"
-msgstr ""
+msgstr "Dil:"
 
 #: src/Views/Search.vala:192
 msgid "Tags:"
-msgstr ""
+msgstr "Etiketler:"
 
 #: src/Views/Search.vala:196
 msgid "blues, jazz, rock, punk..."
-msgstr ""
+msgstr "blues, jazz, rock, punk..."
 
 #: src/Views/Search.vala:206
 msgid "Reverse:"
-msgstr ""
+msgstr "Ters çevir:"
 
 #: src/Views/Search.vala:210
 msgid "descending"
-msgstr ""
+msgstr "azalan"
 
 #: src/Views/Search.vala:211
 msgid "ascending"
-msgstr ""
+msgstr "artan"
 
 #: src/Views/Search.vala:238
 msgid "No results"
-msgstr ""
+msgstr "Sonuç yok"
 
 #: src/Views/Search.vala:238
 msgid "Try to change your search query"
-msgstr ""
+msgstr "Arama teriminizi değiştirmeyi deneyin"
 
 #: src/Widgets/Radio.vala:29
 msgid "Votes: "
-msgstr ""
+msgstr "Oylar:"
 
 #: src/Widgets/PlayingPanel.vala:19
 msgid "Title"
-msgstr ""
+msgstr "Başlık"
 
+# Özel isim, çevirmeyin
 #: src/Application.vala:174 data/com.github.ranfdev.raddiu.desktop.in:4
 #: data/com.github.ranfdev.raddiu.desktop.in:6
 msgid "Raddiu"
-msgstr ""
+msgstr "Raddiu"
 
 #: src/Application.vala:181
 msgid "Discover"
-msgstr ""
+msgstr "Keşfet"
 
 #: src/Application.vala:184
 msgid "Search"
-msgstr ""
+msgstr "Ara"
 
 #: src/Application.vala:187
 msgid "Recents"
-msgstr ""
+msgstr "Son Kullanılanlar"
 
 #: src/Application.vala:197
 msgid "The program mpv is not installed"
-msgstr ""
+msgstr "mpv programı kurulu değil"
 
 #: src/Application.vala:198
 msgid ""
 "Raddiu to function needs to use the program mpv. Install it with your "
 "package manager"
 msgstr ""
+"Raddiu çalışmak için mpv programına ihtiyaç duymaktadır. Paket "
+"yöneticinizden kurabilirsiniz"
 
 #: data/com.github.ranfdev.raddiu.desktop.in:5
 msgid "Listen to web radios"
-msgstr ""
+msgstr "İnternet radyolarını dinle"
 
+# Uygulama kimliği, çevirmeyin
 #: data/com.github.ranfdev.raddiu.desktop.in:8
 msgid "com.github.ranfdev.raddiu"
-msgstr ""
+msgstr "com.github.ranfdev.raddiu"
 
 #: data/com.github.ranfdev.raddiu.desktop.in:11
 msgid "Radio;"
-msgstr ""
+msgstr "Radyo;İnternet Radyosu;Radyolar;"
