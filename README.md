@@ -1,3 +1,6 @@
+### This program is not actively mantained anymore
+if you are looking for an alternative, you can find it here: https://gitlab.gnome.org/World/Shortwave
+
 # Raddiu
 ![Raddiu logo](data/icons/com.github.ranfdev.raddiu.svg)
 ![Raddiu screenshot](data/images/1.png)
